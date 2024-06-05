@@ -37,8 +37,9 @@ public class UserExam {
             return this;
         }
 
-        public void setName(String name) {
+        public UserExamBuilder setName(String name) {
             this.name = name;
+            return this;
         }
 
         public UserExam build() {

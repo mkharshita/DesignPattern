@@ -19,6 +19,7 @@ public class Main
                     .setMathMarks(40)
                     .setEnglishMarks(20)
                     .setScienceMarks(70)
+                    .setName("Harshita")
                     .build();
 
 
