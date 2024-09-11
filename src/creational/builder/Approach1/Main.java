@@ -1,5 +1,11 @@
 package creational.builder.Approach1;
 
+/*
+1. have multiple attributes
+2. want to validate before creating the object
+3. When objects are immutqble (without setters)
+ */
+
 public class Main
 {
     public static void main(String[] args) {
