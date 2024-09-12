@@ -17,6 +17,9 @@ public class Sparrow extends Bird {
     }
     @Override
     public Sparrow clone() {
+        //Parentd attribute are not copied
+//        Sparrow copy = new Sparrow();
+//        copy.legSize = this.legSize;
         return new Sparrow(this);
     }
 }

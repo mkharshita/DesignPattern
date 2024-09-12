@@ -29,6 +29,12 @@ public class Bird implements Cloneable<Bird> {
 
     @Override
     public Bird clone() {
+        //This will only work for the base class, not for the child class.
+//        Bird copy = new Bird();
+//        copy.color = this.color;
+//        copy.name = this.name;
+//        copy.weight = this.weight;
+
         return new Bird(this);
     }
 }

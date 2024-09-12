@@ -18,6 +18,14 @@ public class Crow extends Bird {
 
     @Override
     public Crow clone() {
+        //Parentd attribute are not copied
+//        Crow copy = new Crow();
+//        copy.sound = this.sound;
+
+        // 2.
+//        Bird cloneParent = super.clone();
+
+        // So used the parameterized constructor
         return new Crow(this);
     }
 }

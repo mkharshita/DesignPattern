@@ -3,6 +3,9 @@ package creational.prototype.Approach1;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+Let the object class create a copy of itself -> clone method
+ */
 public class Client {
 
     public static void main(String[] args) {
@@ -56,3 +59,7 @@ public class Client {
         System.out.println("Done");
     }
 }
+
+/*
+
+ */
