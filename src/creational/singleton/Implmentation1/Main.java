@@ -13,7 +13,7 @@ Creational DP:
     Singleton
     Builder
     Prototype
-    Factory -> Practical Factory, Factory Method, Abstract Factory
+    Factory -> Simple Factory, Factory Method, Abstract Factory
 }
 1. How will an object be created
 2. Where will an object be created

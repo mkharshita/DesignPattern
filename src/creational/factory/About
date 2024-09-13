@@ -1,0 +1,39 @@
+Factory DP:
+
+1. Simple Factory (Example Tax package)
+    Implementation:
+        1. Create interface
+        2. Create Concrete classes
+        3. Create Factory
+    Downside:
+        1. Violate O/C
+        2. reduce maintability
+
+2. Factory Method
+    Implementation
+        1. Create the relevant interface/abstract class (Db, query)
+        2. Create the relevant subclasses ( MySqlDb, PostgressDb, MySqlQuery, PostgressQuery)
+        3. Add a absract method to create the object(Query-> createQuery() ) in the parent class(Db class)
+        4. In all subclasses, return new Object
+            MySqlDb{
+                createQuery(){
+                    return new MySqlQuery();
+                }
+            }
+
+    Downside:
+        1. May violates SRP because it might have multiple factory methods in future
+           class DB{
+                //attributes
+                //utility
+                //FM-1
+                createQuery()
+                //FM-2
+                createIndex()
+                //FM-3
+                createViews()
+           }
+
+3. Abstract Factory (Example Theme package)
+    {Factory of Factories}
+
