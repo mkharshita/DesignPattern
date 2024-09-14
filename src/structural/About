@@ -1,0 +1,25 @@
+Structural DP:
+
+1. Adapter
+2. Decorator
+3. Flyweight
+
+How will my code/ classes be structured
+
+1. Adapter DP
+Adapter allows to connect a device not directly supported by the hardware
+Adapter converts an interface that is not supported to an interface that is supported (UK to India electric adapter)
+
+When you are using 3rd party APIs that are prone to change in future, dont depend on them directly.
+Instead depend on them via adapter class entity
+    Implementation:
+    1. Create an interface for the services that you need. (PaymentGateway)
+    2. Implement an adapter class for each variant of 3rd party API.
+
+2. Decorator DP
+Example - IceCream, Pizza
+
+3. FlyWeight DP
+
+4. Facade DP
+{Wrapper for multiple internal + external classes}
