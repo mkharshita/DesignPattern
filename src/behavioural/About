@@ -1,0 +1,27 @@
+Behavioural DP
+
+1. Strategy DP
+2. Observer DP
+3. Common DP
+
+How will you implement a particular type of functionality (behaviour) in our codebase.
+
+1. Strategy DP
+    Whenever there are multiple ways to do something, dont put that code in the client class. (Violated SRP, OCP)
+    Insead create an interface to represent that behaviour (PathCalculator) and make make subclass.
+    Creating multiple strategies.
+    Assignment:
+        Implement a class called RainWaterTrappingSolution
+        which has a method solve(List<int> heights, solution)
+
+2. Observer DP
+    Publisher-Subscriber Model, Producer-Consumer Model, Speaker-Listner Model, Subject Observer Model
+    Implementation:
+    1. We have a class (Flipkart) that has a special event (order placed)
+        that others (SMS, InvoiceGenerator, analytics, etc) are interested about to perform own action
+        Publisher -> class that has a special event
+        Subscriber -> classes that have to perform an action based on the event
+        Publisher should also maintain the list of its subclasses.
+    2. Subscriber is an interface that is implemented by anyone who wants to know when the event happens.
+    3. Publisher provides a way for subscribers to register.
+       Publisher provides a way for subscribers to unregister.
